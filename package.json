@@ -27,7 +27,7 @@
 		"convert"
 	],
 	"dependencies": {
-		"any-observable": "^0.3.0"
+		"zen-observable": "^0.8.15"
 	},
 	"devDependencies": {
 		"array-to-events": "^1.0.0",
@@ -36,7 +36,6 @@
 		"delay": "^2.0.0",
 		"nyc": "^11.7.1",
 		"rxjs": "^5.5.10",
-		"xo": "^0.20.3",
-		"zen-observable": "^0.8.8"
+		"xo": "^0.20.3"
 	}
 }
