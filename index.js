@@ -1,5 +1,18 @@
 'use strict';
-const Observable = require('any-observable');
+let pnp;
+let Observable;
+try {
+// eslint-disable-next-line import/no-unresolved
+	pnp = require('pnpapi');
+} catch (e) {
+	// Not in PnP; not a problem
+}
+
+if (pnp) {
+	({Observable} = require('rxjs'));
+} else {
+	Observable = require('any-observable');
+}
 
 function or(option, alternate, required) {
 	const result = option === false ? false : option || alternate;
