@@ -1,5 +1,5 @@
 'use strict';
-const Observable = require('any-observable');
+const Observable = require('zen-observable');
 
 function or(option, alternate, required) {
 	const result = option === false ? false : option || alternate;
